@@ -1,0 +1,36 @@
+import javax.swing.ImageIcon;
+import java.util.Random;
+
+public class Mothership extends Enemy implements Shared {
+
+    private final String enemy = "/images/aliens/mothership.png";
+    private final int WIDTH = 28;
+    private final int HEIGHT = 14;
+    private int points = (new Random().nextInt(8000))+2000;
+        
+    public Mothership () {
+        super(0,32,0);
+       
+        ImageIcon ii = new ImageIcon(this.getClass().getResource(enemy));
+        setImage(ii.getImage());
+
+    }
+    
+    public void hit (){
+        setX (0);
+        die();
+    }
+    
+    public int getPoints(){
+        return points;
+    }
+    
+    public void move (){
+        if (getX() < FIELD_WIDTH)
+            setX(getX()+3);
+        else{
+            die();
+            setX(-30);
+        }
+    } 
+}

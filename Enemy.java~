@@ -1,0 +1,50 @@
+import javax.swing.ImageIcon;
+import java.awt.Rectangle;
+
+public class Enemy extends Sprite implements Shared {
+
+    private final String enemy = "/images/aliens/1.png";
+    private final int WIDTH = 32;
+    private final int HEIGHT = 16;
+    private int points;
+
+    public Enemy(int x, int y, int points) {
+        this.x = x;
+        this.y = y;
+        this.points = points;
+
+        ImageIcon ii = new ImageIcon(this.getClass().getResource(enemy));
+        setImage(ii.getImage());
+
+    }
+    
+    public void move (String dir){
+        if (dir == "left" && getX() > 32){
+            setX(getX()-32);
+        }
+        else if (dir == "right" && getX()<FIELD_WIDTH -32){
+            setX(getX()+32);
+        }
+        else if (dir == "down"){
+            setY(getY()+16);
+        }
+    } 
+    public boolean collision (Rectangle bullet){
+        return bullet.intersects(getRect());
+    }
+    public boolean invasion (){
+        return EARTH.intersects(getRect());
+    }
+    public Rectangle getRect (){
+        return new Rectangle(getX(), getY(), WIDTH, HEIGHT);
+    }
+    public void hit (){
+        die();
+    }
+    private void setPoints (int points){
+        this.points=points;
+    }
+    public int getPoints (){
+        return points;
+    }
+}
