@@ -2,7 +2,6 @@ import javax.swing.ImageIcon;
 import java.awt.Rectangle;
 
 /** Enemy
-  * ICS4U1-14
   * Description: Earth Defender
   *              Enemy sprite. Inherits from Sprite and implements Shared constants. 
   * 

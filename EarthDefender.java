@@ -1,5 +1,4 @@
 /** Earth Defender
-  * ICS4U1-14
   * Description: Earth Defender
   *              Main Program. Instantiates the main JFrame, Board.
   * 

@@ -2,7 +2,7 @@ import javax.swing.ImageIcon;
 import java.util.Random;
 
 /** Mothership
-  * ICS4U1-14
+
   * Description: Earth Defender
   *             Mothership sprite. Inherits from Enemy and implements Shared constants. This enemy picks a random
   *             point value when instantiated.

@@ -229,7 +229,7 @@ public class Field extends JPanel implements Runnable, Shared {
         if (frameCount % 100 == 0)
             enemyMove();
         // Make Mothership
-        if (frameCount % 200 == 0)
+        if (frameCount % 500 == 0)
             mothership.setVisible (true);
         
         // Make enemy bullet
@@ -263,6 +263,7 @@ public class Field extends JPanel implements Runnable, Shared {
         
         //Check Win
         if (enemies.size()==0){
+            player.die();
             endGame (true);
         }
         

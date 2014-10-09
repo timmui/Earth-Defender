@@ -4,7 +4,6 @@ import javax.swing.JPanel;
 import javax.swing.JLabel;
 
 /** Board
-  * ICS4U1-14
   * Description: Earth Defender
   *              Main JFrame for the game. Instantiates and handles GUI. Implements Shared constants.
   * 

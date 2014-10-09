@@ -2,7 +2,6 @@ import javax.swing.ImageIcon;
 import java.awt.Rectangle;
 
 /** Bullet
-  * ICS4U1-14
   * Description: Earth Defender
   *              Bullet sprite for player and enemy. Inherits from Sprite and implements Shared constants. 
   * 

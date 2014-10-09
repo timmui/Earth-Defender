@@ -12,7 +12,7 @@ import java.awt.Rectangle;
 
 public class Bullet extends Sprite implements Shared {
 
-    private String bullet  = "/images/bullet.png";
+    private final String bullet  = "/images/bullet.png";
     private final int H_SPACE = 6;
     private final int V_SPACE = 1;
     private final int WIDTH = 10;

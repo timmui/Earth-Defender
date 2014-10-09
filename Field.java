@@ -28,7 +28,6 @@ import java.io.IOException;
 import java.util.Scanner;
 
 /** Field
-  * ICS4U1-14
   * Description: Earth Defender
   *              Field class instantiates all game variables and runs the animation cycle. Also handles all of the 
   *              keyboard input and GUI interactions. Implements Runnable (for threads) and Shared constants.

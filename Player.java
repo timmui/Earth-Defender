@@ -2,7 +2,7 @@ import javax.swing.ImageIcon;
 import java.awt.Rectangle;
 
 /** Player
-  * ICS4U1-14
+
   * Description: Earth Defender
   *              Player sprite. Inherits from Sprite and implements Shared constants. 
   * 

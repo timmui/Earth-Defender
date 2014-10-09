@@ -1,7 +1,6 @@
 import java.awt.Image;
 
 /** Sprite
-  * ICS4U1-14
   * Description: Earth Defender
   *              Parent Sprite class. All sprites inherit from this class.
   * 

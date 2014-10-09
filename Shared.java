@@ -1,7 +1,6 @@
 import java.awt.Rectangle;
 
 /** Shared
-  * ICS4U1-14
   * Description: Earth Defender
   *              Repository for all shared constants between classes. 
   * 
